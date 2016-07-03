@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Тестовое задание</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="checkbox.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="user">
+          <div class="user__avatar">
+            <img src="images/userpic.jpg" alt="">
+          </div>
+          <div class="user__info">
+            <div class="user__info__name">Краснов Василий Зосимович</div>
+            <div class="user__info__email">vasil.crasnov@yandex.ru</div>
+          </div>
+        </div>
+        <ul class="socials">
+          <li><a href="" class="icon"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="" class="icon"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="" class="icon"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <section class="student-info">
+          <div class="container">
+            <h1 class="heading">О будущем ученике</h1>
+            <h3 class="subheading">Ребятам из Loftschool будет полезно узнать немного обо мне</h3>
+            <article>
+              <img src="icons/hello.svg" alt="">
+              <div class="article__text">
+                <h3 class="article__title">Немного обо мне</h3>
+                <p class="article__story">Я живу в Чебоксарах (Россия). Мне 30 лет. Образование высшее экономическое. Закончил МарГТУ (г.Йошкар-Ола). Работал бухгалтером, но решил перейти в веб-разработку. Занимаюсь самообразованием в этой сфере один год.</p>
+              </div>
+            </article>
+            <article>
+              <img src="icons/experience.svg" alt="">
+              <div class="article__text">
+                <h3 class="article__title">Мой опыт в разработке</h3>
+                <p class="article__story">В процессе своего обучения прошел курсы на <a href="http://www.codecademy.com" class="link_blue">www.codecademy.com</a> по HTML, CSS, Javascript, Ruby, Ruby on Rails, Git, SQL, а также завершил блоки "Основы веб-разработки" и "HTML5 и CSS3" на <a href="http://codenamecrud.ru" class="link_blue">codenamecrud.ru</a></p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="loftblog-courses">
+          <div class="hidden-block">
+            <div class="container">
+              <div class="hidden-text"><i class="fa fa-check" aria-hidden="true"></i>Задание выполнено</div>
+            </div>
+          </div>
+          <div class="loftblog-courses-content">
+            <div class="container">
+              <h1 class="heading">Курсы на loftblog</h1>
+              <h3 class="subheading">которые мне помогут в выполнении этого задания</h3>
+              <ul class="courses-list">
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/js.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Основы JavaScript</h3>
+                      <p class="article__story">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 24 урока (6 часов 45 минут)</div>
+                    </div>
+                   </a> 
+                   <div class="form">
+                     <input type="checkbox" class="checkbox" id="checkbox_1">
+                     <label for="checkbox_1">Посмотрел</label>
+                   </div>                                         
+                </li>
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/jquery.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Основы JQUERY</h3>
+                      <p class="article__story">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 уроков (2 часа 6 минут)</div>
+                    </div>
+                  </a>  
+                  <div class="form">
+                    <input type="checkbox" class="checkbox" id="checkbox_2">
+                    <label for="checkbox_2">Посмотрел</label>
+                  </div>
+                </li>
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/base-element.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Базовые элементы страницы</h3>
+                      <p class="article__story">Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 9 уроков (2 часа 7 минут)</div>
+                    </div>
+                  </a>  
+                  <div class="form">
+                    <input type="checkbox" class="checkbox" id="checkbox_3">
+                    <label for="checkbox_3">Посмотрел</label>
+                  </div>
+                </li>
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/adaptive.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Создание адаптивных сайтов</h3>
+                      <p class="article__story">В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 уроков (2 часа 11 минут)</div>
+                    </div>
+                  </a>  
+                  <div class="form">
+                    <input type="checkbox" class="checkbox" id="checkbox_4">
+                    <label for="checkbox_4">Посмотрел</label>
+                  </div>
+                </li>
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/button-generator.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Верстка адаптивной css галереи</h3>
+                      <p class="article__story">В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 уроков (1 час 11 минут)</div>
+                    </div>
+                  </a>  
+                  <div class="form">
+                    <input type="checkbox" class="checkbox" id="checkbox_5">
+                    <label for="checkbox_5">Посмотрел</label>
+                  </div>
+                </li>
+                <li class="courses-list__item">
+                  <a href="">
+                    <div class="image">
+                      <img src="images/css-gallery.jpg" alt="">
+                    </div>
+                    <div class="course-text">
+                      <h3 class="article__title">Верстка адаптивной css галереи</h3>
+                      <p class="article__story">В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.</p>
+                      <div class="course-data"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 урока (50 минут)</div>
+                    </div>
+                  </a>  
+                  <div class="form">
+                    <input type="checkbox" class="checkbox" id="checkbox_6">
+                    <label for="checkbox_6">Посмотрел</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="empty"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer-text">А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
+не зависимо от количества контента на странице и размера окна.</div>
+    </footer>
+  </body>
+</html>

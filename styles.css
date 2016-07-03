@@ -1,0 +1,359 @@
+/*=======================
+       Reset 
+=======================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*=======================
+      Fonts 
+=======================*/
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('☺'),
+  	url('fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+	font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('☺'),
+ 	  url('fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('☺'), 
+  	url('fonts/FiraSans/FiraSans-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/*=======================
+    Custom styles 
+=======================*/
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	min-width: 960px;
+	height: 100%;
+	font-family: 'Fira Sans', Arial, sans-serif;
+}
+ul li {
+	list-style-type: none;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.empty {
+	height: 72px;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.link_blue {
+	color:#03a9f4;
+	text-decoration: underline;
+}
+
+/*=======================
+       Header 
+=======================*/
+
+.header {
+	width: 100%;
+	height: 90px;
+	background-color: #8cc34b;
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+.user {
+	float: left;
+	position: relative;
+	margin-top: 13px;
+	color: #fff;
+}
+.user::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.user__avatar {
+	float: left;
+	width: 63px;
+	height: 63px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin-right: 17px;
+	margin-left: 28px;
+}
+.user__avatar img {
+	width: 61px;
+}
+.user__info {
+	float: left;
+	margin-top: 9px;
+}
+.user__info__name {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.user__info__email {
+	font-size: 14px;
+	opacity: 0.7;
+	margin-top: 4px;
+}
+
+.socials {
+	float: right;
+	margin-top: 29px;
+	margin-right: 10px;
+}
+.socials li {
+	display: inline-block;
+	padding-right: 18px;
+}
+.socials::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.icon {
+	color: #fff;
+	opacity: 0.7;
+}
+.icon:hover {
+	opacity: 1;
+}
+
+/*=======================
+       Content 
+=======================*/
+
+.content {
+	width: 100%;
+}
+
+.student-info {
+	padding-top: 40px;
+	padding-bottom: 72px;
+}
+.student-info::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.heading {
+	font-size: 42px;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	color: #212121;
+}
+.subheading {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 300;
+	color: #727272;
+}
+.student-info article {
+	width: 460px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 32px;
+}
+.article__text {
+	width: 282px;
+	float: right;
+	margin-right: 18px;
+	
+}
+.article__title {
+	font-size: 21px;
+	color: #212121;
+	padding-bottom: 10px;
+}
+.article__story {
+	color: #727272;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+}
+.loftblog-courses {
+	background: url(gplaypattern.png);
+}
+.hidden-block {
+	background: rgba(246, 247, 242, 0.6);
+	display: none;
+	margin: 0 auto;
+}
+.hidden-text {
+	padding-top: 585px;
+	padding-bottom: 605px;
+	font-size: 41px;
+	font-weight: 600;
+	color: #8cc34b;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+.hidden-text i {
+	font-size: 34px;
+	margin-right: 17px;
+}
+.loftblog-courses-content {
+	background: rgba(246, 247, 242, 0.6);
+	padding-top: 43px;
+	padding-bottom: 61px;
+}
+.courses-list {
+	padding-top: 38px;
+}
+.courses-list__item {
+	width: 300px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	float: left;
+	margin: 0 10px 20px 10px;
+}
+.courses-list__item a {
+	display: block;
+}
+.courses-list__item a:hover .article__title {
+	color: #8cc34b;
+}
+.courses-list__item a:hover .image {
+	border-bottom: 4px solid #8cc34b;
+}
+.courses-list::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.image {
+	height: 170px;
+	overflow: hidden;
+}
+.course-text {
+	background: #fff;
+	padding: 17px 20px 0 20px;
+}
+.course-data {
+	padding-top: 12px;
+	padding-bottom: 16px;
+	color: #b6b6b6;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+/*=======================
+       Checkbox 
+=======================*/
+
+.form {
+	height: 59px;
+	background: #f6f7f2;
+	padding-left: 20px;
+	color: #727272;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 19px;
+}
+.checkbox + label {
+  cursor: pointer; /*Show here that label is clickable*/
+}
+
+.checkbox:not(checked) {
+	position: absolute; /*Hide original checkbox*/
+	opacity: 0;
+}
+.checkbox:not(checked) + label {
+	position: relative;
+	padding-left: 40px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: #fff;
+	border: 2px solid #727272;
+ }
+ .checkbox:checked + label:before {
+  background: #8cc34b;
+  border: 2px solid #8cc34b;
+  font: 14px 'FontAwesome';
+  content: '\F00C';
+  color: #fff;
+}
+.checkbox:checked + label {
+	color: #8cc34b;
+}
+
+/*=======================
+       Footer 
+=======================*/
+
+.footer {
+	height: 72px;
+	margin-top: -72px;
+	position: relative;
+	width: 100%;
+	background-color: #212121;
+	box-shadow: 0 6px 6px rgba(0,0,0,.2);
+}
+.footer-text {
+	width: 620px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.5;
+	padding: 16px 50px 15px 50px;
+	line-height: 21px;
+}
+
+/*=======================
+    Checking items
+=======================*/
+
+.checked {
+	background-color: gray;
+	opacity: 0.5;
+}
